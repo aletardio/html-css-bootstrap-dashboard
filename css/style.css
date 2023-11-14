@@ -7,21 +7,16 @@
 header {
     width: 100%;
     background-color: red;
-    height: 75px;
+    height: 100px;
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
 #top {
-    height: calc(100vh - 75px);
+    height: calc(100vh - 60px);
     background-color: blue;
-}
-
-.top-content {
     display: flex;
-    background-color: green;
-    height: 100%;
 }
 
 .border {
@@ -30,6 +25,15 @@ header {
 
 .content {
     height: 50px;
+}
+
+.content-2 {
+    height: 200px;
+}
+
+.top-content {
+    display: flex;
+    height: 100%;
 }
 
 #sidebar {
@@ -65,4 +69,10 @@ header {
     width: 100vw;
     background-color: orange;
     overflow-y: auto;
+}
+
+main {
+    max-height: calc(100vh - 60px);
+    overflow: auto;
+    background-color: blueviolet;
 }
