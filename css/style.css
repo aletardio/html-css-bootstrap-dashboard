@@ -16,7 +16,6 @@ header {
 
 #top {
     height: calc(100vh - 60px);
-    background-color: blue;
     display: flex;
 }
 
@@ -73,7 +72,6 @@ header {
 main {
     max-height: calc(100vh - 60px);
     overflow: auto;
-    background-color: green;
 }
 
 .logo {
@@ -135,4 +133,8 @@ div#offcanvasRight {
 
 .mrg-top-inpt {
     margin-top: 2rem!important;
+}
+
+li.list-group-item:hover {
+    background-color: transparent;
 }
