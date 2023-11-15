@@ -60,6 +60,11 @@ main {
     width: 100%;
 }
 
+.logo-mobile {
+    width: 60px;
+    height: 60px;
+}
+
 .no-bord {
     border: none;
 }
