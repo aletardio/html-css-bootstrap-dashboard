@@ -138,3 +138,22 @@ div#offcanvasRight {
 li.list-group-item:hover {
     background-color: transparent;
 }
+
+th {
+    font-weight: 400;
+}
+
+.table th:nth-child(1), .table td:nth-child(1){
+    width: 50%;
+}
+
+.circle {
+    border: none;
+    background-color: #F26552;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: white;
+    cursor: auto;
+}
+
