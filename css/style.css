@@ -7,8 +7,8 @@
 
 header {
     width: 100%;
-    background-color: red;
-    height: 100px;
+    background-color: #1C72E8;
+    height: 120px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -96,7 +96,7 @@ main {
     padding: 0 8px;
 }
 
-button.btn.fa-solid.fa-bell.fa-lg.bell {
+button.btn.fa-solid.fa-bell.fa-md.bell {
     color: orange;
     border: none;
 }
@@ -115,4 +115,19 @@ button.btn.fa-solid.fa-bell.fa-lg.bell {
 
 li:hover {
     cursor: pointer;
+}
+
+.bg-blue {
+    background-color: #155BBA;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+button.btn.btn-primary {
+    border: 1px solid white;
+    background-color: #1C72E8;
+}
+
+div#offcanvasRight {
+    width: 50%;
 }
