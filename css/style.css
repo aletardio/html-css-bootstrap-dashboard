@@ -38,9 +38,10 @@ header {
 }
 
 #sidebar {
-    width: 8%;
+    width: 150px;
     height: 100%;
-    background-color: lightblue;
+    background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,13 +49,11 @@ header {
 
 .top-sidebar {
     width: 100%;
-    background-color: blueviolet;
 }
 
 .bottom-sidebar {
     height: 75px;
     width: 100%;
-    background-color: yellow;
 }
 
 #navbar {
@@ -66,7 +65,7 @@ header {
 }
 
 #content {
-    width: 100vw;
+    width: calc(100vw - 150px);
     background-color: orange;
     overflow-y: auto;
 }
@@ -74,7 +73,7 @@ header {
 main {
     max-height: calc(100vh - 60px);
     overflow: auto;
-    background-color: blueviolet;
+    background-color: green;
 }
 
 .logo {
@@ -100,4 +99,20 @@ main {
 button.btn.fa-solid.fa-bell.fa-lg.bell {
     color: orange;
     border: none;
+}
+
+.marg-lft-icon-1 {
+    margin-left: 10px;
+}
+
+.marg-lft-icon-2 {
+    margin-left: 15px;
+}
+
+.marg-lft-icon-3 {
+    margin-left: 12px;
+}
+
+li:hover {
+    cursor: pointer;
 }
