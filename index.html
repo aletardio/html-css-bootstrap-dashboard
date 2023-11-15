@@ -15,21 +15,22 @@
             <div class="row">
                 <div class="col-1 d-flex justify-content-start align-items-center">
                     <div class="">
-                        <img class="logo" src="./img/logo.svg" alt="">
+                        <img class="logo d-lg-block d-none" src="./img/logo.svg" alt="">
+                        <img class="logo d-lg-none d-block" src="./img/mobile-logo.png" alt="">
                     </div>
                 </div>
-                <div class="col-10 d-flex justify-content-center align-items-center">
+                <div class="col d-flex justify-content-center align-items-center">
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text no-bord grey-place" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
                         <input type="text" class="form-control no-bord grey-place" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Prova a cercare: Lezioni di Laravel" aria-describedby="addon-wrapping">
                     </div>
                 </div>
-                <div class="col-1 d-flex flex-row justify-content-start align-items-center">
-                        <i class="fa-solid fa-list-ul fa-md space-icon"></i>
-                        <i class="fa-solid fa-circle-question fa-md space-icon"></i>
-                        <i class="fa-solid fa-ellipsis-vertical fa-md space-icon"></i>
+                <div class="col-auto d-flex flex-row justify-content-start align-items-center">
+                        <i class="fa-solid fa-list-ul fa-md space-icon d-lg-block d-none"></i>
+                        <i class="fa-solid fa-circle-question fa-md space-icon d-lg-block d-none"></i>
+                        <i class="fa-solid fa-ellipsis-vertical fa-md space-icon d-lg-block d-none"></i>
                         <div class="dropdown">
-                            <button class="btn fa-solid fa-bell fa-md bell" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn fa-solid fa-bell fa-md bell d-block" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         
                             </button>
                             <ul class="dropdown-menu">
@@ -50,14 +51,14 @@
         <div id="sidebar">
             <div class="top-sidebar">
                 <ul class="list-inline p-3 mb-2">
-                    <li class="d-flex align-items-center text-light fs-6 ms-2 pb-3"><i class="fa-solid fa-house fa-lg"></i><span class="d-flex align-items-center marg-lft-icon-1">Home</span></li>
-                    <li class="d-flex align-items-center text-light fs-6 ms-2 pb-3"><i class="fa-solid fa-chart-simple fa-lg"></i><span class="d-flex align-items-center marg-lft-icon-2">Stats</span></li>
-                    <li class="d-flex align-items-center text-light fs-6 ms-2 pb-3"><i class="fa-solid fa-signal fa-md"></i><span class="d-flex align-items-center marg-lft-icon-3">Signals</span></li>
+                    <li class="d-flex align-items-center text-light fs-6 ms-2 pb-3 margin-icon-sidebar"><i class="fa-solid fa-house fa-lg"></i><span class="d-lg-flex d-none  align-items-center marg-lft-icon-1">Home</span></li>
+                    <li class="d-flex align-items-center text-light fs-6 ms-2 pb-3 margin-icon-sidebar"><i class="fa-solid fa-chart-simple fa-lg"></i><span class="d-lg-flex d-none align-items-center marg-lft-icon-2">Stats</span></li>
+                    <li class="d-flex align-items-center text-light fs-6 ms-2 pb-3 margin-icon-sidebar"><i class="fa-solid fa-signal fa-md"></i><span class="d-lg-flex d-none align-items-center marg-lft-icon-3">Signals</span></li>
                 </ul>
             </div>
             <div class="bottom-sidebar">
                 <ul class="list-inline p-3 mb-2">
-                    <li class="d-flex align-items-center text-light fs-6 ms-2 pt-2"><i class="fa-solid fa-gear fa-lg"></i><span class="d-flex align-items-center marg-lft-icon-1">Admin</span></li>
+                    <li class="d-flex align-items-center text-light fs-6 ms-2 pt-2"><i class="fa-solid fa-gear fa-lg"></i><span class="d-lg-flex d-none align-items-center marg-lft-icon-1">Admin</span></li>
                 </ul>
             </div>
         </div> 
@@ -68,7 +69,9 @@
                 <header>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-6">
+
+                            <!-- BOOLEAN -->
+                            <div class="col-lg-6 col-md-4 col-12">
                                 <span class="fs-2 text-light">
                                     Boolean
                                 </span>
@@ -90,7 +93,9 @@
                                     Boolean blog app
                                 </span>
                             </div>
-                            <div class="col-3">
+
+                            <!-- STUDENTI ONLINE -->
+                            <div class="col-lg-3 col-md-4 col-12">
                                 <div class="text-light fs-6">
                                     Studenti online negli ultimi 30 minuti
                                 </div>
@@ -98,7 +103,9 @@
                                     125
                                 </div>
                             </div>
-                            <div class="col-3">
+
+                            <!-- NUOVO STUDENTE -->
+                            <div class="col-lg-3 col-md-4 col-12">
                                 <div class="text-light fs-6 d-inline-block me-2">
                                     Nuovo studente
                                 </div>
@@ -110,6 +117,8 @@
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
+
+                                <!-- OFFCANVAS -->
                                 <div class="offcanvas-body">
                                     <form action="">
                                         <div class="container">
