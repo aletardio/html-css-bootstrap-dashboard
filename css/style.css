@@ -115,6 +115,7 @@ button.btn.fa-solid.fa-bell.fa-md.bell {
 
 li:hover {
     cursor: pointer;
+    background-color: #8896A5;
 }
 
 .bg-blue {
@@ -130,4 +131,8 @@ button.btn.btn-primary {
 
 div#offcanvasRight {
     width: 50%;
+}
+
+.mrg-top-inpt {
+    margin-top: 2rem!important;
 }
